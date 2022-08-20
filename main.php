@@ -16,9 +16,10 @@
 body,html{
     overflow-x: hidden;
     background: rgb(63,251,151);
-  background: radial-gradient(circle, rgba(63,251,151,1) 0%, rgba(43,75,58,1) 44%, rgba(0,0,0,1) 100%);
-  height: 100%;
-  background-position: center;
+    background-image: linear-gradient(to top, #244435, #26593f, #296e47, #30834d, #3a9951, #43a356, #4dac5a, #56b65f, #5cb567, #63b56f, #69b477, #70b37e);
+    height: 100%;
+    overflow-y: hidden;
+    background-position: center;
 }
 #centered1{
     position:absolute;
@@ -45,30 +46,51 @@ body,html{
 }
 
 #signup{
-    width: 60%;
-    border-radius: 30px;
+    width: 50%;
+    height:30%;
+    border-radius: 10px;
 }
 
 #login{
-    width: 60%;
-    border-radius: 30px;
+    width:50%;
+    border-radius: 10px;
     background: #fff;
     border: 1px solid #1da1f2;
-    color: aquamarine;
+    color: black;
     
 }
 
 #login:hover{
-    width: 60%;
+    width: 52%;
+    border-radius: 30px;
+    background: rgb(91,192,222);
+    border: 1px solid #0d4669;
+    color: rgb(44, 143, 110);
+}
+
+#signup:hover{
+    width: 52%;
     border-radius: 30px;
     background: #fff;
     border: 1px solid #0d4669;
     color: rgb(44, 143, 110);
 }
-
 .well{
     background-color: #6ed47f;
 }
+
+.verticalText{
+  position:absolute;
+  left:80vw; 
+  display:flex;
+  opacity:45% ;
+  letter-spacing: 10px;
+  font-size:250px;
+  overflow:hidden;
+  top:3vh;
+  overflow:hidden;
+}
+
 </style>
 
 <body>
@@ -103,11 +125,12 @@ body,html{
         <div id="centered3" class="centered"><h3 style="color: rgb(206, 206, 206);"><span class=></span>&nbsp&nbsp<strong></strong></h3></div>
         </div>
 
-        <div class="col-sm-6" style="position:absolute;right: 47%; color: white;">
+        <div id="signinContainer" class="col-sm-6" style="position:absolute;right: 47%; color: white;">
             <br><br><br><br><br><br><br><br><br><br><br><br>
-        <h2><strong>See whats happening on <br> right now</strong></h2><br><br>
-        <h4><strong>join Crescendo today</strong></h4>
+        <h2><strong>See whats happening <br> right now</strong></h2><br><br>
+        <h4><strong>Join Crescendo Today</strong></h4>
 
+        <p class="verticalText"; style="writing-mode: vertical-rl">Crescendo</p>
 <!----form for login and signup-->
         <form method="post" action="">
             <p id="fill">Please fill in this form to create an account</p>

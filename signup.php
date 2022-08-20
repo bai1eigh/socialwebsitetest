@@ -16,14 +16,14 @@
 body,html {
   overflow-x: hidden;
   background: rgb(63,251,151);
-  background: radial-gradient(circle, rgba(63,251,151,1) 0%, rgba(43,75,58,1) 44%, rgba(0,0,0,1) 100%);
+      background-image: linear-gradient(to top, #244435, #26593f, #296e47, #30834d, #3a9951, #43a356, #4dac5a, #56b65f, #5cb567, #63b56f, #69b477, #70b37e);
   height: 100%;
   background-position: center;
 }
 
 .main-content{
-    width:50%;
-    height:80%;
+  width:30vw;
+  height:70vh;
     margin:10px auto;
     background-color:#fff;
     border:2px solid#e6e6e6;
@@ -34,7 +34,7 @@ body,html {
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 100px;
 }
 
 .header{
@@ -48,6 +48,7 @@ body,html {
 
 #signup{
 width:60%;
+border:none;
 border-radius: 30px;
 background-color: #6ed47f;
 }

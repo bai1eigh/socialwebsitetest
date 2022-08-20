@@ -14,16 +14,15 @@
     body,html {
       overflow-x: hidden;
       background: rgb(63,251,151);
-      background: radial-gradient(circle, rgba(63,251,151,1) 0%, rgba(43,75,58,1) 44%, rgba(0,0,0,1) 100%);
+      background-image: linear-gradient(to top, #244435, #26593f, #296e47, #30834d, #3a9951, #43a356, #4dac5a, #56b65f, #5cb567, #63b56f, #69b477, #70b37e);
       height: 100%;
       background-position: center;
     }
     
     .main-content{
-        width:50%;
-        height:80%;
+        width:30vw;
+        height:40vh;
         margin:10px auto;
-
         border:2px solid#e6e6e6;
         padding:40px 50px;
         background: rgba(255, 255, 255, 0.733);
@@ -32,7 +31,7 @@
         -webkit-backdrop-filter: blur( 4px );
         border-radius: 10px;
         text-align: center;
-        margin-top: 10px;
+        margin-top: 200px;
     }
     
     .header{
@@ -47,7 +46,9 @@
     #signin{
     width:60%;
     border-radius: 30px;
-    background-color: #6ed47f;
+    background: #fff;
+    border:none;
+    color: rgb(44, 143, 110);
     }
 
     .overlap-text{
@@ -55,12 +56,12 @@
     }
     
     .overlap-text a{
-      position: absolute;
-top:8px;
-right: 10px;
-font-size: 14px;
-text-decoration: none;
-letter-spacing: -1px;
+    position: absolute;
+    top:8px;
+    right: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    letter-spacing: -1px;
     }
     </style>
 <body>
@@ -103,7 +104,7 @@ letter-spacing: -1px;
         <input id="email" type="email" class="form-control input-md" placeholder="Email" name="email" required="required"><br>
         <div class="overlap-text">
         <input type="password" name="pass" placeholder="Password" required="required" class="form-control input-md"><br>
-        <a style="text-decoration:none; float: rihgt; color: blue;" href="forgot_password.php" data-toggle="tooltip" title="Reset Password">Forgot?</a>
+        <a style="text-decoration:none; float: right; color: blue;" href="forgot_password.php" data-toggle="tooltip" title="Reset Password">Forgot?</a>
         </div>
     </div><br>
     <a style="text-decoration: none; float:right; color: blue;"data-toggle="tooltip" title="Create Account!" href="signup.php"> Don't have an account?</a><br><br>

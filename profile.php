@@ -41,11 +41,10 @@ if(!isset($_SESSION['user_email'])){
     position:absolute;
     top: 160px;
     left: 42px;
-
 }
 
 #update_profile {
- background-color: rgba(102, 105, 104, 0.233);
+background-color: rgba(102, 105, 104, 0.233);
 position: relative;
 top: -33px;
 left: 93px;
@@ -65,7 +64,8 @@ cursor: pointer;
 
 #own_posts{
     border: 5px solid #e6e6e6;
-    padding: 40px 50px;
+    padding: 50px 50px;
+    margin-left:9px;
 }
 
 #post_img{
