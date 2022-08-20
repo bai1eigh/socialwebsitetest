@@ -63,7 +63,7 @@ include("functions/functions.php");
                                 <a href='home.php'>My Posts<span class='badge badge-secondary'>$posts</span></a>
                             </li>
                             <li>
-                                <a href='edit_profile.php?u_id=$user_id'>Edit Account </a>
+                                <a href='edit_profile.php?u_id=$user_id'> </a>
                             </li>
                             <li role='separator'class='divider'></li>
                             <li>
