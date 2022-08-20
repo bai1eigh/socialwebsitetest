@@ -1,5 +1,6 @@
 <?php
-$con = mysqli_connect("localhost", "root", "","social_crescendo") or die ("Connection was not established");
+//$con = mysqli_connect("localhost", "root", "","social_crescendo") or die ("Connection was not established");
+session_start();
 
 if(isset($_GET['post_id'])){
     $post_id = $_GET['post_id'];
