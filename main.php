@@ -127,7 +127,7 @@ body,html{
 
         <div id="signinContainer" class="col-sm-6" style="position:absolute;right: 47%; color: white;">
             <br><br><br><br><br><br><br><br><br><br><br><br>
-        <h2><strong>See whats happening <br> right now</strong></h2><br><br>
+        <h2><strong>Where social media <br> meets music</strong></h2><br><br>
         <h4><strong>Join Crescendo Today</strong></h4>
 
         <p class="verticalText"; style="writing-mode: vertical-rl">Crescendo</p>

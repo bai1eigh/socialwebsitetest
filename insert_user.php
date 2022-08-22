@@ -1,5 +1,5 @@
 <?php
-session_start();
+//session_start();
 include("includes/connection.php");
 
 if(isset($_POST['sign_up'])){
@@ -19,7 +19,7 @@ if(isset($_POST['sign_up'])){
     $run_username = mysqli_query($con,$check_username_query);
 
     //$check = mysqli_number_rows($run_email);
-
+//if someone tries to signup with the same information
     if($check == 1){
         echo "<script>alert('Email already exists, please use a different email')</script>";
         echo "<script>window.open('signup.php','_self')</script>";

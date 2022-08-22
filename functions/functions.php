@@ -1,10 +1,8 @@
 <?php
- //$con = mysqli_connect("localhost", "root", "","social_crescendo") or die ("Connection was not established");
- session_start();
+ $con = mysqli_connect("localhost", "root", "","social_crescendo") or die ("Connection was not established");
+ //session_start();
 
 //function for inserting post
-
-
 function insertPost(){
 	if(isset($_POST['sub'])){
 		global $con;
@@ -14,7 +12,7 @@ function insertPost(){
 		$upload_image = $_FILES['upload_image']['name'];
 		$image_tmp = $_FILES['upload_image']['tmp_name'];
 		$random_number = rand(1, 100);
-//insert  poost information 
+//insert  post information 
 		if(strlen($content) > 250){
 			echo "<script>alert('Please Use 250 or less than 250 words!')</script>";
 			echo "<script>window.open('home.php', '_self')</script>";
@@ -413,7 +411,6 @@ function search_user(){
 			title='$username' style='float:left; margin:1px;'/>
 			</a>
 			</div><br><br>
-
 			<div class='col-sm-6'>
 			<a style='text-decoration:none; cursor:pointer;color:dark blue; 
 			'href='user_profile.php?u_id=$user_id'><strong><h2>$f_name $l_name</h2></strong></a>
@@ -424,7 +421,6 @@ function search_user(){
 			</div>
 			<div class='col-sm-4'>
 			</div><br>
-
 			</div>
 			";
 		}
