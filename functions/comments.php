@@ -1,6 +1,7 @@
 <?php
 //session_start();
 
+
 $get_id = $_GET['post_id'];
 
 $get_com = "select * from comments where post_id='$get_id' ORDER by 1 DESC";
